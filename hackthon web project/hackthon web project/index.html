@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKeeper | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="00 - images/unnamed.png">
+    <script src="func.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="imgtitle">
+            <img src="00 - images/wall-clock.png" alt="Logo" width="50px">
+            <h1 id="title">Time Keeper</h1>
+        </div>
+        <nav id="links">
+            <button class="nav-btn" onclick="Notes()">Lecture Notes</button>
+            <button class="nav-btn" onclick="Time()">Time Table</button>
+            <button class="nav-btn" onclick="Guides()">Guides</button>
+            <button class="nav-btn" onclick="Events()">Events</button>
+            <button class="nav-btn active-page" onclick="Home()">Home</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section center-text">
+            <h2 class="welcome-title">Welcome to Time Keeper</h2>
+            <p class="welcome-subtitle">Your Integrated Academic Hub</p>
+            <p class="welcome-desc">Manage your university life with precision. View color-coded batch timetables for the current semester or use our comparison tool to find overlapping free slots between different student groups.</p>
+            <div class="header-divider"></div>
+        </section>
+
+        <div class="dashboard-grid">
+            <div class="feature-card">
+                <div class="card-icon">📅</div>
+                <h3>View Timetables</h3>
+                <p>Access high-accuracy schedules for Student Groups 01, 02, and 03 below.</p>
+                <label for="view-toggle" class="cta-button">View Schedules</label>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">🔄</div>
+                <h3>Compare Schedules</h3>
+                <p>Launch the comparison tool to identify shared free periods between batches.</p>
+                <a href="file:///C:/Users/amirz/Downloads/hackthon%20web%20project/hackthon%20web%20project/secondary%20pages/timetable/timetable.html" class="cta-button">Go to Comparer</a>
+            </div>
+        </div>
+
+        <input type="checkbox" id="view-toggle" style="display: none;">
+
+        <section class="timetable-display-area">
+            <div class="group-section">
+                <h2 class="center-text">Student Group 01</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>8:30-10:30</td><td></td><td class="cat-comm">Prof. Communication<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>10:30-12:30</td><td class="cat-fluency">Foundations of Fluency<br><span>A503</span></td><td class="cat-ai">AI Foundations<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">Future Stack Lab (S1)<br><span>F304</span></td></tr>
+                            <tr><td>1:30-3:30</td><td class="cat-fluency">Foundations of Fluency<br><span>F503</span></td><td class="cat-ai">AI Foundations Lab (S1)<br><span>A412</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">Future Stack Lab (S2)<br><span>G1304</span></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>3:30-5:30</td><td class="cat-stack">Future Stack<br><span>G1401</span></td><td class="cat-ai">AI Foundations Lab (S2)<br><span>A412</span></td><td></td><td class="cat-math">Essential Mathematics<br><span>G1402</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <h2 class="center-text">Student Group 02</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>8:30-10:30</td><td></td><td class="cat-comm">Industry Guest Lecture<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>10:30-12:30</td><td></td><td class="cat-ai">AI Foundations<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">Future Stack Lab (S1)<br><span>B402</span></td></tr>
+                            <tr><td>1:30-3:30</td><td class="cat-fluency">Foundations of Fluency<br><span>B502</span></td><td class="cat-ai">AI Foundations Lab (S1)<br><span>G1303</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">Future Stack Lab (S2)<br><span>F304</span></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>3:30-5:30</td><td class="cat-stack">Future Stack<br><span>G1402</span></td><td class="cat-ai">AI Foundations Lab (S2)<br><span>B402</span></td><td class="cat-fluency">Foundations of Fluency<br><span>G1401</span></td><td class="cat-math">Essential Mathematics<br><span>G1402</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <h2 class="center-text">Student Group 03</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>8:30-10:30</td><td></td><td class="cat-comm">Industry Guest Lecture<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-ai">AI Foundations Lab (S1)/Future Stack Lab (S2)<br><span>F304(S1) & G1302(S2)</span></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>10:30-12:30</td><td></td><td class="cat-ai">AI Foundations<br><span>G1402</span></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">AI Foundations Lab (S2)<br><span>G1302</span></td></tr>
+                            <tr><td>1:30-3:30</td><td class="cat-fluency">Foundations of Fluency<br><span>B502</span></td><td></td><td class="cat-math">Essential Mathematics<br><span>G1401</span></td><td class="cat-stack">Future Stack Lab (S1)<br><span>G1302</span></td><td class="cat-ct" rowspan="2">Computational Thinking</td></tr>
+                            <tr><td>3:30-5:30</td><td class="cat-stack">Future Stack<br><span>G1401</span></td><td></td><td class="cat-fluency">Foundations of Fluency<br><span>G1401</span></td><td class="cat-math">Essential Mathematics<br><span>G1402</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

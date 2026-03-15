@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(241, 112, 20);
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: rgb(241, 112, 20); /* Standard SLIIT Orange */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px; /* Forces identical height on all pages */
+    box-sizing: border-box;
+}
+
+#imgtitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#title {
+    color: white;
+    margin: 0;
+    font-size: 2rem; /* Matches the size in your Lecture Notes page */
+}
+
+#links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    color: rgb(241, 112, 20);
+    background-color: white;
+}
+.nav-btn.active-page {
+    background-color: #fff !important;
+    color: rgb(241, 112, 20) !important;
+    border: 1px solid white;
+}
