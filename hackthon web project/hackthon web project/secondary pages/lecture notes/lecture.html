@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures and Notes | TimeKeeper</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/00 - images/unnamed.png">
+    
+    <script src="../nav.js"></script>
+<script>
+  function Home() { window.location.href = "../../index.html" }
+  function Notes() { window.location.href = "../lecture%20notes/lecture.html" }
+  function Time()  { window.location.href = "../timetable/timetable.html" }
+  function Guides(){ window.location.href = "../guides/guides.html" }
+  function Events(){ window.location.href = "../events/events.html" }
+</script>
+</head>
+<body>
+
+    <header id="header">
+        <div id="imgtitle">
+            <img src="../../00 - images/wall-clock.png" alt="Logo" width="50px">
+            <h1 id="title">Time Keeper</h1>
+        </div>
+
+        <nav id="links">
+            <button class="nav-btn active-page" onclick="Notes()">Lecture Notes</button>
+            <button class="nav-btn" onclick="Time()">Time Table</button>
+            <button class="nav-btn" onclick="Guides()">Guides</button>
+            <button class="nav-btn" onclick="Events()">Events</button>
+            <button class="nav-btn" onclick="Home()">Home</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Lecture Notes</h1>
+        <p>Access your subject materials and study resources here.</p>
+        
+        </main>
+
+</body>
+</html>
